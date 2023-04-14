@@ -1,0 +1,10 @@
+---
+- name: this playbook creates file
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: creating file
+      file:
+        path: /opt/Newfile
+        state: touch
+...

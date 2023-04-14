@@ -1,0 +1,13 @@
+---
+- name: varibales
+  hosts: all
+  become: yes 
+  vars_files:
+  - ex.yml 
+  tasks: 
+  - name: creating user with var
+    user:
+      name: "{{user}}"
+...
+
+

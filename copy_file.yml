@@ -1,0 +1,12 @@
+---
+- name: This playbook copies file
+  hosts: all
+  become: yes
+  tasks: 
+   - name: copying file
+     copy:
+       src: /home/ansadmin/Ansible_playbooks/git_install.yml
+       dest: /
+       mode: 777
+       owner: ansadmin
+...
